@@ -1,0 +1,33 @@
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0; 
+    color: #555; 
+    width: calc(25% - 20px); 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.post:hover {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f5ebeb; 
+}
+
+.post h2 {
+    padding: 20px;
+    margin: 10px;
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(100% - 20px); 
+    }
+}
